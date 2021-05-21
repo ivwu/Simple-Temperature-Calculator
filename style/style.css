@@ -21,5 +21,6 @@ body {
 .display-4{
     font-weight: 500 !important;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(169, 75, 231) 
 }
 
