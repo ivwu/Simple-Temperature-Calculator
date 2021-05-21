@@ -21,8 +21,9 @@
 </head>
 
 <body>
+    <div class="text-center" id="banner"><a class="navbar-brand text-center" href="./index.html">Fahrenheit and Celsius Converter</a></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">Fahrenheit and Celsius Convertor</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,15 +43,20 @@
     <div class="jumbotron description">
         <h1 class="display-4 title text-center">Celsius to Fahrenheit</h1>
         <p class="lead">
-            <p>
-                <label for="Celcius">Celsius (°C): </label>
-                <input type="number" id="Celcius">
-            </p><hr>
-            <p>
-                <label for="Fahrenheit">Fahrenheit (°F): </label>
-                <input type="number" id="Fahrenheit" readonly>
-            </p>
+            <form>
+                <div class="form-group">
+                    <label for="Celcius">Celsius (°C):</label>
+                    <input type="number" class="form-control" id="Celcius" placeholder="Celcius" >
+                </div>
 
+                <hr>
+                <div class="form-group">
+                    <label for="Fahrenheit">Fahrenheit (°F): </label>
+                    <input type="number" class="form-control" id="Fahrenheit" aria-describedby="emailHelp"
+                        placeholder="Enter Fahrenheit" readonly>
+                </div>
+                <hr>
+            </form>
             <input class="btn btn-outline-info btn-small float-right" type="button" value="Convert" id="ConvertToF">
             <input class="btn btn-outline-danger btn-small float-left" type="button" value="Reset" id="reset">
         </p>
