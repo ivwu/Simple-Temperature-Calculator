@@ -9,10 +9,16 @@ const celciusField = document.getElementById("Celcius")
 
 window.onload = function () {
     const getCelciusBtn = document.getElementById("ConvertToC")
-    getCelciusBtn.onclick = getCelcius
+    if (getCelciusBtn) {
+        getCelciusBtn.onclick = getCelcius
+    }
+    
 
-    // const getFahrenheitBtn = document.getElementById("ConvertToF")
-    // getFahrenheitBtn.onclick = getFahrenheit
+    const getFahrenheitBtn = document.getElementById("ConvertToF")
+    if (getFahrenheitBtn) {
+        getFahrenheitBtn.onclick = getFahrenheit
+    }
+    
 
     const resetBtn = document.getElementById("reset")
     resetBtn.onclick = reset
@@ -27,12 +33,12 @@ function getCelcius () {
     celciusField.value = result.toFixed(2)
 }
 
-// function getFahrenheit () {
-//     let celcius = Number(celciusField.value)
-//     let result = (celcius * 9/5) + 32
+function getFahrenheit () {
+    let celcius = Number(celciusField.value)
+    let result = (celcius * 9/5) + 32
 
-//     fahrenheitField.value = result.toFixed(2)
-// }
+    fahrenheitField.value = result.toFixed(2)
+}
 
 function reset () {
     fahrenheitField.value = null
