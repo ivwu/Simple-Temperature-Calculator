@@ -20,8 +20,8 @@ window.onload = function () {
     }
     
 
-    const resetBtn = document.getElementById("reset")
-    resetBtn.onclick = reset
+    // const resetBtn = document.getElementById("reset")
+    // resetBtn.onclick = reset
 }
 
 
@@ -40,7 +40,7 @@ function getFahrenheit () {
     fahrenheitField.value = result.toFixed(2)
 }
 
-function reset () {
-    fahrenheitField.value = null
-    celciusField.value = null
-}
+// function reset () {
+//     fahrenheitField.value = null
+//     celciusField.value = null
+// }
