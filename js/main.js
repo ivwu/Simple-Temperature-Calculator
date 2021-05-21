@@ -13,6 +13,9 @@ window.onload = function () {
 
     // const getFahrenheitBtn = document.getElementById("ConvertToF")
     // getFahrenheitBtn.onclick = getFahrenheit
+
+    const resetBtn = document.getElementById("reset")
+    resetBtn.onclick = reset
 }
 
 
@@ -30,3 +33,8 @@ function getCelcius () {
 
 //     fahrenheitField.value = result.toFixed(2)
 // }
+
+function reset () {
+    fahrenheitField.value = null
+    celciusField.value = null
+}
