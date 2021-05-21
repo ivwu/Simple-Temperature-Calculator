@@ -25,7 +25,7 @@ window.onload = function () {
 }
 
 
-//define function
+//define functions
 function getCelcius () {
     let fahrenheit = Number(fahrenheitField.value)
     let result = (fahrenheit - 32) * 5/9
